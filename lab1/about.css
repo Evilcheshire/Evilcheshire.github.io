@@ -1,6 +1,6 @@
 .history-values {
     height: 94vh;
-    background: linear-gradient(to left, #092020be 40%, #09202000), url(../about.jpg) center top fixed;
+    background: linear-gradient(to left, #092020be 40%, #09202000), url(img/about.jpg) center top fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -67,7 +67,7 @@ iframe {
 
 @media (max-width: 1024px) {
     .history-values {
-        background: linear-gradient(to left, #092020be 60%, #0920205f), url(../about.jpg) center top fixed;
+        background: linear-gradient(to left, #092020be 60%, #0920205f), url(img/about.jpg) center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
@@ -117,7 +117,7 @@ iframe {
         min-height: 60vh;
         height: fit-content;
         text-align: center;
-        background: linear-gradient(to left, #092020be 60%, #0920205f), url(../about.jpg) center top fixed;
+        background: linear-gradient(to left, #092020be 60%, #0920205f), url(img/about.jpg) center top fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
