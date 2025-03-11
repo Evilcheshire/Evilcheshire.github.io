@@ -1,0 +1,142 @@
+.menu {
+    text-align: center;
+}
+
+.menu h2 {
+    color: #468286;
+}
+
+.menu-table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-bottom: 10vh;
+    border-spacing: 0;
+    justify-content: center;
+}
+
+.menu-table thead {
+    background-color: #468286;
+    color: #fff;
+    font-size: 20px;
+}
+
+.menu-table thead tr {
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr 100px;
+    align-items: center;
+}
+
+.menu-table th, 
+.menu-table td {
+    padding: 15px;
+    text-align: left;
+}
+
+.menu-table .content {
+    display: grid;
+    grid-template-columns: 120px 1fr 2fr 100px;
+    align-items: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    overflow: hidden;
+}
+
+.menu-table .content:hover {
+    background-color: #cff3f1;
+}
+
+.menu-table .content:nth-child(even):hover {
+    background-color: #dceaea;
+}
+
+.menu-table img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.menu-table tbody th {
+    font-size: 20px;
+    color: #468286;
+    text-align: center;
+}
+
+.menu-table td {
+    font-size: 18px;
+    color: #092020;
+}
+
+.menu-table td:nth-child(2) {
+    font-weight: bold;
+    color: #468286;
+}
+
+.menu-table td:nth-child(4) {
+    font-weight: bold;
+    color: #84bfbf;
+}
+
+@media (max-width: 1024px) {
+    .menu-table {
+        padding-bottom: 8vh;
+    }
+
+    .menu-table thead {
+        font-size: 18px;
+    }
+
+    .menu-table thead tr,
+    .menu-table .content {
+        grid-template-columns: 100px 2fr 1fr;
+    }
+
+    .menu-table th:nth-child(3),
+    .menu-table td:nth-child(3) {
+        display: none;
+    }
+
+    .menu-table td,
+    .menu-table th {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .menu-table img {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-table {
+        width: 95%;
+        padding-bottom: 5vh;
+    }
+
+    .menu-table thead {
+        font-size: 16px;
+    }
+
+    .menu-table thead tr,
+    .menu-table .content {
+        grid-template-columns: 90px 2fr 1fr;
+    }
+
+    .menu-table th:nth-child(3),
+    .menu-table td:nth-child(3) {
+        display: none;
+    }
+
+    .menu-table td,
+    .menu-table th {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .menu-table img {
+        width: 80px;
+        height: 80px;
+    }
+}
