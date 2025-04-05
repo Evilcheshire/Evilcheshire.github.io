@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню</title>
+    <link rel="icon" type="image/x-icon" href="img/icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Viaoda+Libre&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1><img src="img/icon_dark.png">Селеста</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="chefs.html">Наші кухарі</a></li>
+                <li><a href="about.html">Про нас</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Наше меню</h2>
+            <table class="menu-table">
+                <thead>
+                    <tr>
+                        <th>Зображення</th>
+                        <th>Страва</th>
+                        <th>Опис</th>
+                        <th>Ціна</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr><th colspan="4">Закуски</th></tr>
+                    <tr class="content">
+                        <td><img src="img/bruschetta.jpg" alt="Bruschetta"></td>
+                        <td>Бурускетта</td>
+                        <td>
+                            <div>Підсмажений хліб зі смачною начинкою.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Цільнозерновий багет, авокадо, лосось, томати, спеції.</span>
+                            </div>
+                        </td>                       
+                        <td>€7.99</td>         
+                    </tr>
+                    
+                    <tr class="content">
+                        <td><img src="img/garlic_shrimp.jpg" alt="Garlic Shrimp"></td>
+                        <td>Креветки в часниковому соусі</td>
+                        <td>
+                            <div>Соковиті креветки, обсмажені в часниковому соусі.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Креветки, часник, вершкове масло, петрушка, лимонний сік.</span>
+                            </div>
+                        </td>
+                        <td>€9.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/stuffed_mushrooms.jpg" alt="Stuffed Mushrooms"></td>
+                        <td>Фаршировані гриби</td>
+                        <td>
+                            <div>Гриби фаршировані сиром та зеленню.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Гриби, вершковий сир, пармезан, часник, зелень.</span>
+                            </div>
+                        </td>
+                        <td>€8.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/cheese_platter.jpg" alt="Cheese Platter"></td>
+                        <td>Сирна тарілка</td>
+                        <td>
+                            <div>Асорті сирів з фруктами і горіхами.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Брі, чеддер, гауда, волоські горіхи, виноград, мед.</span>
+                            </div>
+                        </td>
+                        <td>€12.99</td>
+                    </tr>
+
+                    <tr><th colspan="4">Салати</th></tr>
+                    <tr class="content">
+                        <td><img src="img/caesar_salad.jpg" alt="Caesar Salad"></td>
+                        <td>Салат "Цезар"</td>
+                        <td>
+                            <div>Листовий салат ромен з пармезаном, крутонами та соусом «Цезар». </div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Салат ромен, пармезан, крутони, соус «Цезар», анчоуси.</span>
+                            </div>
+                        </td>
+                        <td>€12.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/greek_salad.jpg" alt="Greek Salad"></td>
+                        <td>Грецький салат</td>
+                        <td>
+                            <div>Свіжі помідори, огірки, оливки та сир фета.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Помідори, огірки, оливки, фета, червона цибуля, оливкова олія, спеції.</span>
+                            </div>
+                        </td>
+                        <td>€11.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/caprese.jpg" alt="Caprese Salad"></td>
+                        <td>Салат Капрезе</td>
+                        <td>
+                            <div>Помідори, моцарела та базилік зі справжнім італійським бальзамічним соусом.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Помідори, моцарела, базилік, більзамічний соус, оливкова олія. </span>
+                            </div>
+                        </td>
+                        <td>€10.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/quinoa_salad.jpg" alt="Quinoa Salad"></td>
+                        <td>Салат з кіноа</td>
+                        <td>
+                            <div>Кіноа з авокадо, болгарським перцем та цитрусовою заправкою.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Кіноа, авокадо, болгарський перець, заправка з лайма, кінза</span>
+                            </div>
+                        </td>
+                        <td>€13.49</td>
+                    </tr>
+
+                    <tr><th colspan="4">перші страви</th></tr>
+                    <tr class="content">
+                        <td><img src="img/tomato_soup.jpg" alt="Tomato Soup"></td>
+                        <td>Томатний крем-суп</td>
+                        <td>
+                            <div>Наваристий вершковий томатний суп із зеленню..</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Помідори, базилік, вершки, часник, цибуля.</span>
+                            </div>
+                        </td>
+                        <td>€7.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/chicken_soup.jpg" alt="Chicken Soup"></td>
+                        <td>Курячий більйон</td>
+                        <td>
+                            <div>Класичний курячий бульйон з овочами.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Курка, морква, селера, цибуля, часник, бульйон.</span>
+                            </div>
+                        </td>
+                        <td>€8.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/mushroom_soup.jpg" alt="Mushroom Soup"></td>
+                        <td>Грибний крем-суп</td>
+                        <td>
+                            <div>Шовковистий грибний суп з вершковою ноткою.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Гриби, вершки, вершкове масло, цибуля, чебрець.</span>
+                            </div>
+                        </td>
+                        <td>€9.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/seafood_soup.jpg" alt="Seafood Soup"></td>
+                        <td>Суп з морепродуктів</td>
+                        <td>
+                            <div>Смачний суп з креветками, мідіями та рибою.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Креветки, мідії, риба, помідори, часник, зелень.</span>
+                            </div>
+                        </td>
+                        <td>€12.99</td>
+                    </tr>
+
+                    <tr><th colspan="4">Основні страви</th></tr>
+                    <tr class="content">
+                        <td><img src="img/beef_steak.jpg" alt="Beef Steak"></td>
+                        <td>Яловичий стейк</td>
+                        <td>
+                            <div>Стейк з яловичини на грилі зі смаженою картоплею.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Яловичина, сіль, перець, часник, вершкове масло, смажена картопля.</span>
+                            </div>
+                        </td>
+                        <td>€22.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/salmon.jpg" alt="Grilled Salmon"></td>
+                        <td>Лосось на грилі</td>
+                        <td>
+                            <div>Свіжий лосось смажений на грилі з травами</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Лосось, лимон, кріп, оливкова олія.</span>
+                            </div>
+                        </td>
+                        <td>€18.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/carbonara.jpg" alt="Pasta Carbonara"></td>
+                        <td>Паста "Карбонара"</td>
+                        <td>
+                            <div>Класична італійська паста з гуанчале і з соусом з яєчного жовтка, сиру пекоріно романо.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Спагеті, гуанчале, яйця, сир пекоріно, чорний перець.</span>
+                            </div>
+                        </td>
+                        <td>€15.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/pizza.jpg" alt="Margherita Pizza"></td>
+                        <td>Піца "Маргарита"</td>
+                        <td>
+                            <div>Піца з печі на дровах з томатами й моцірелою.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Тісто з цільнозернового борошна, томатний соус, моцірела, пармезан, томати, базилік, спеції.</span>
+                            </div>                        
+                        </td>
+                        <td>€14.99</td>
+                    </tr>
+
+                    <tr><th colspan="4">Десерти</th></tr>
+                    <tr class="content">
+                        <td><img src="img/chocolate_cake.jpg" alt="Chocolate Cake"></td>
+                        <td>Шоколадний торт</td>
+                        <td>
+                            <div>Багатий на смак торт з шоколадним бісквітом й ганашем.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Чорний шоколад, какао, борошно, яйця, коричневий цукор, лимонна цедра.</span>
+                            </div>                        
+                        </td>
+                        <td>€9.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/cheesecake.jpg" alt="Cheesecake"></td>
+                        <td>Чізкейк</td>
+                        <td>
+                            <div>Ніжний чізкейк з ягідним соусом.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Крем-сир, яйця, пісочне тісто, цукор, якідний соус.</span>
+                            </div>                        
+                        </td>
+                        <td>€10.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/tiramisu.jpg" alt="Tiramisu"></td>
+                        <td>Тірамісу</td>
+                        <td>
+                            <div>Класичний італійський десерт.</div>
+                            <div class="ingredients-container">
+                                <button class="ingridients-button">Показати інгредієнти</button>
+                                <span class="ingredients-text">Маскарпоне, кава, савоярді, цукор, ром, какао.</span>
+                            </div>                        
+                        </td>
+                        <td>€11.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/ice_cream.jpg" alt="Ice Cream"></td>
+                        <td>Морозиво</td>
+                        <td>
+                            <div>Власне морозиво з відбірних інгридієнтів в асортименті</div>                     
+                        </td>
+                        <td>€7.99</td>
+                    </tr>
+
+                    <tr><th colspan="4">Напої</th></tr>
+                    <tr class="content">
+                        <td><img src="img/coffee.jpg" alt="Coffee"></td>
+                        <td>Кава в асортименті</td>
+                        <td>Запашна кава зі свіжомелених зерен.</td>
+                        <td>€4.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/tea.jpg" alt="Tea"></td>
+                        <td>Чай</td>
+                        <td>Широкий віибір від класичних китайськів чаїв до трав'яних.</td>
+                        <td>€3.99</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/orange_juice.jpg" alt="Orange Juice"></td>
+                        <td>Апельсиновий фреш</td>
+                        <td>Фреш з відбірних соковитих апельсинів.</td>
+                        <td>€5.49</td>
+                    </tr>
+                    <tr class="content">
+                        <td><img src="img/red_wine.jpg" alt="Red Wine"></td>
+                        <td>Червоне вино</td>
+                        <td>Бокал високоякісного червоного вина.</td>
+                        <td>€8.99</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
+    </main>
+    
+
+    <footer>
+        <div class="footer-container">
+            <section>
+                <h5>Про нас</h5>
+                <p>У Селесті ми поєднуємо традиції та інновації, щоб запропонувати унікальні страви.
+                    Від свіжих продуктів від ферми до столу до затишної атмосфери - ми гарантуємо, що кожен візит буде особливим.</p>
+            </section>
+
+            <section>
+                <h5>Контакти</h5>
+                <p><img src="img/location.png"> 109 Hanover St, Edinburgh EH2 1DJ, Scotland</p>
+                <p><img src="img/email.png"> info@example.com</p>
+                <p><img src="img/phone.png"> + 01 234 567 88</p>
+                </section>
+               
+            <section>
+                <h5>Години роботи</h5>
+                <p>Понеділок - Четвер: 8 ранку - 9 вечора</p>
+                <p>П'ятниця - Субота: 8 ранку - 1 ночі</p>
+                <p>Неділя: 9 ранку - 10 вечора</p>
+            </section>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Всі права захищені</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
