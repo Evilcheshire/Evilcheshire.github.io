@@ -1,7 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
-import ScrollToTop from './general/ScrollToTop';
 import menuImg from '../assets/images/menu.jpg';
 
 function Main() {

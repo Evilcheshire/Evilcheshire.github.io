@@ -76,6 +76,23 @@ a:hover {
     text-decoration: wavy underline;
 }
 
+nav button {
+    text-decoration: none;
+    color: #468286;
+    font-family: "PT Serif", serif;
+    font-size: 22px;
+    font-weight: bold;
+    transition: color 0.7s ease, font-size 0.5s ease, text-decoration 0.5s ease-in-out;
+ line-height: 1.56;
+}
+
+nav button:hover{
+    color: #84bfbf;
+    font-size: 24px;
+    text-decoration: wavy underline;
+}
+
+
 main {
     flex-grow: 1;
     background-color: #f4f4f4;
@@ -293,6 +310,58 @@ footer .footer-bottom p {
     color: #468286;
     font-size: 18px;
     margin: 0;
+}
+
+input[type="submit"] {
+    color: #84bfbf;
+    background-color: #092020;
+    font-size: 18px;
+    font-weight: bold;   
+    font-family: "Libre Baskerville", serif;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="submit"]:hover {
+    color: #cff3f1;
+    background-color: #468286;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "Libre Baskerville", serif;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus{
+    background: white;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+}
+
+input[type="email"], input[type="password"], .auth-form form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-family: "Libre Baskerville", serif;
+    border-radius: 5px;
+    border-style: none;
+    background: #cff3f189;
+    outline: none;
+    transition: 0.3s;
+}
+
+input[type="email"]:focus, input[type="password"]:focus, .auth-form form input[type="text"]:focus {
+    background: #f4f4f4;
+    box-shadow: 0px 0px 5px #cff3f189;
 }
 
 @media (max-width: 768px) {

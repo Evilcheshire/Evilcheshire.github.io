@@ -1,43 +1,18 @@
-import React, { useState, useEffect } from "react";
-import { db } from "../../firebase"; 
-import { collection, getDocs } from "firebase/firestore"; 
+import React, { useState } from "react";
 import MenuSection from "./MenuSection";
 import SortControls from "./SortControls";
 import FilterInput from "./FilterInput";
+import menuData from "./menuData";
 
 const Menu = () => {
-  const [menuData, setMenuData] = useState([]); 
-  const [sortBy, setSortBy] = useState(null); 
+  const [sortBy, setSortBy] = useState(null);
   const [filterText, setFilterText] = useState("");
-  const [menuLoaded, setMenuLoaded] = useState(false); 
-
-  useEffect(() => {
-    const loadMenuData = async () => {
-      try {
-        const menuQuery = collection(db, "menu");
-        const querySnapshot = await getDocs(menuQuery);
-
-        if (!querySnapshot.empty) {
-          const loadedMenuData = querySnapshot.docs.map(doc => doc.data());
-   
-          loadedMenuData.sort((a, b) => a.order - b.order);
-          
-          setMenuData(loadedMenuData);
-        }
-        setMenuLoaded(true); 
-      } catch (err) {
-        console.error("Помилка при завантаженні меню:", err);
-      }
-    };
-
-    loadMenuData();
-  }, []);
 
   const getFilteredAndSortedItems = (items) => {
     const filtered = items.filter(item =>
       item.name.toLowerCase().includes(filterText.toLowerCase())
     );
-
+  
     switch (sortBy) {
       case "price-asc":
         return [...filtered].sort((a, b) => a.price - b.price);
@@ -51,10 +26,6 @@ const Menu = () => {
         return filtered;
     }
   };
-
-  if (!menuLoaded) {
-    return <div>Завантаження меню...</div>;
-  }
 
   return (
     <main>

@@ -45,7 +45,7 @@ const MenuItem = ({ item }) => {
             >
               {showIngredients ? "Сховати інгредієнти" : "Показати інгредієнти"}
             </button>
-            <span className="ingredients-text">
+            <span className="ingredients-text" style={{ display: showIngredients ? "inline" : "none" }}>
               {item.ingredients}
             </span>
           </div>
