@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { db } from "../../firebase";
+import { db } from "../../firebase/firebase";
 import { collection, setDoc, doc } from "firebase/firestore";
 import menuData from "./menuData";
 
@@ -29,14 +29,14 @@ const UploadMenuData = () => {
         }
         console.log("Menu uploaded to Firestore");
       } catch (error) {
-        console.error("rror uploading menu:", error);
+        console.error("Error uploading menu:", error);
       }
     };
 
     upload();
   }, []);
 
-  return <p>Завантаження меню до Firestore... Перевір консоль.</p>;
+  return <p>Завантаження меню до Firestore... Перевірте консоль.</p>;
 };
 
 export default UploadMenuData;

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
-import { db } from "../firebase";
+import { db } from "../firebase/firebase";
 import { collection, doc, setDoc } from "firebase/firestore";
 
 const AuthForm = ({ onClose }) => {
@@ -41,12 +41,9 @@ const AuthForm = ({ onClose }) => {
         await updateProfile(user, {
           displayName: displayName,
         });
-
-        alert("Реєстрація успішна!");
         onClose();
       } else {
         await signInWithEmailAndPassword(auth, email, password);
-        alert("Вхід виконано!");
         onClose();
       }
     } catch (err) {
@@ -138,6 +135,7 @@ const styles = {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
+    fontFamily: "'PT Serif', serif",
   },
   toggle: {
     color: "#468286",
