@@ -15,5 +15,6 @@ setupTests.js
 .env.test
 .env.production
 
-/frontend
-/firebase/serviceAccountKey.json
+lab5/frontend
+lab5/backend/firebase/serviceAccountKey.json
+lab5/frontend/src/firebase/firebase.js
