@@ -19,7 +19,7 @@ const addComment = async (req, res) => {
     text.toLowerCase().includes(comp.toLowerCase())
   );
   if (containsCompetitor) {
-    return res.status(400).json({ message: 'Comment contains competitor names' });
+    return res.status(400).json({ message: 'Коментар містить недопустимі символи' });
   }
 
   try {
